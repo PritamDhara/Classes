@@ -1,0 +1,14 @@
+1> Java program's file name and public class name should be same and it is case sensitive . (ex. Name , Main ) and the  file extension should be .java
+
+2> to compile a java file we need to run a command in cmd(Command Prompt) javac <SourceCodeFileName with Extension>  (ex. javac Name.java , javac Main.java)
+
+3> after the compilation of soucecode JMV(Java Virtual Machine) creates a .class file(byte code) .
+
+4> to run a java program we need to run a command in cmd(Command Prompt) which will run the .class file and its command is java <class file name without extension> (ex. java Main , java Name).
+
+5> the main method is the entry point for all program.
+
+
+notes -> java was invented 1995 in Sun Microsystem.org by James Gosling that was later accquired by Oracle corporation.
+
+every line java end with a semicolon , without it compiler will throw an error .

@@ -1,0 +1,126 @@
+In Java, Keywords are the Reserved words in a programming language that are used for some internal process or represent some predefined actions. These words are therefore not allowed to use as variable names or objects. 
+
+
+
+There are 67 Keywords in Java.
+
+
+The keywords const and goto are reserved, even though they are not currently in use.
+Currently, they are no longer supported in Java.
+true, false, and null look like keywords, but in actuality they are literals. However, they still can’t be used as identifiers in a program.
+
+
+
+
+
+Now let us discuss different types of variables  which are listed as follows: 
+
+Local Variables
+Instance Variables
+Static Variables
+
+
+
+
+
+Types of Operators in Java
+Arithmetic Operators
+Unary Operators
+Assignment Operator
+Relational Operators
+Logical Operators
+Ternary Operator
+Bitwise Operators
+Shift Operators
+instance of operator
+
+
+Assignment Operator
+
++= , Add and assign.
+-= , Subtract and assign.
+*= , Multiply and assign.
+/= , Divide and assign.
+%= , Modulo and assign.
+
+
+
+Relational operators compare values and return boolean results:
+
+== , Equal to.
+!= , Not equal to.
+< , Less than.
+<= , Less than or equal to.
+> , Greater than.
+>= , Greater than or equal to.
+
+
+Conditional operators are:
+
+&&, Logical AND: returns true when both conditions are true.
+||, Logical OR: returns true if at least one condition is true.
+!, Logical NOT: returns true when a condition is false and vice-versa
+
+
+
+ Ternary operator
+The Ternary Operator is a shorthand version of the if-else statement. It has three operands and hence the name Ternary. The general format is ,
+
+condition ? if true : if false 
+
+
+
+Bitwise Operators
+Bitwise Operators are used to perform the manipulation of individual bits of a number and with any of the integer types. They are used when performing update and query operations of the Binary indexed trees. 
+
+& (Bitwise AND) – returns bit-by-bit AND of input values.
+| (Bitwise OR) – returns bit-by-bit OR of input values.
+^ (Bitwise XOR) – returns bit-by-bit XOR of input values.
+~ (Bitwise Complement) – inverts all bits (one’s complement).
+
+
+
+ Shift Operators
+Shift Operators are used to shift the bits of a number left or right, thereby multiplying or dividing the number by two, respectively. They can be used when we have to multiply or divide a number by two. The general format , 
+
+ number shift_op number_of_places_to_shift;  
+
+
+
+
+<< (Left shift) – Shifts bits left, filling 0s (multiplies by a power of two).
+>> (Signed right shift) – Shifts bits right, filling 0s (divides by a power of two), with the leftmost bit depending on the sign.
+>>> (Unsigned right shift) – Shifts bits right, filling 0s, with the leftmost bit always 0.
+
+ instanceof operator
+The instance of operator is used for type checking. It can be used to test if an object is an instance of a class, a subclass, or an interface. The general format ,  
+
+object instance of class/subclass/interface 
+
+
+
+
+
+
+
+
+
+public class GFG
+{
+    public static void main(String[] args)
+    {
+        int a = 20, b = 10, c = 0;
+          int d = 20, e = 40, f = 30;
+
+        // precedence rules for arithmetic operators.
+        // (* = / = %) > (+ = -)
+        // prints a+(b/d)
+        System.out.println("a+b/d = " + (a + b / d));
+
+        // if same precedence then associative
+        // rules are followed.
+        // e/f -> b*d -> a+(b*d) -> a+(b*d)-(e/f)
+        System.out.println("a+b*d-e/f = "
+                           + (a + b * d - e / f));
+    }
+}
